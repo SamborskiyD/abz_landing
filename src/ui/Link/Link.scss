@@ -1,0 +1,37 @@
+@use 'variables' as v;
+
+.button {
+    padding: 4px 0;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 80px;
+    background-color: v.$primary-color;
+    font-family: v.$main-font;
+    color: v.$black-color;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        background-color: v.$button-hover-color;
+    }
+
+    &__disabled {
+        background-color: v.$button-disable-color;
+        color: v.$white-color;
+
+        &:hover {
+            background-color: v.$button-disable-color;
+        }
+    }
+
+    &__small {
+        width: 100px;
+    }
+
+    &__big {
+        width: 120px;
+    }
+}
+

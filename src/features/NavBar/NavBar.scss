@@ -1,0 +1,40 @@
+@use "variables" as v;
+
+.nav {
+  background-color: v.$white-color;
+  display: flex;
+  justify-content: center;
+  padding: 13px 16px;
+  width: 100%;
+
+  .content,
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .content {
+    width: 100%;
+    max-width: 1170px;
+  }
+
+  .content {
+    gap: 14px;
+  }
+  .buttons {
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    padding: 13px 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav {
+    padding: 13px 60px;
+  }
+}

@@ -1,0 +1,36 @@
+@use "variables" as v;
+
+.file-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.file-button {
+  border: 1px solid v.$black-color;
+  padding: 14px 16px;
+  border-radius: 4px 0 0 4%;
+  cursor: pointer;
+
+  &__red {
+    border: 2px solid v.$error-color;
+  }
+}
+
+.filename {
+  display: block;
+  border: 1px solid v.$border-gray-color;
+  border-left: none;
+  position: relative;
+  border-radius: 0 4px 4px 0;
+  padding: 14px 16px;
+  width: 100%;
+  color: v.$text-gray-color;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &__red {
+    border: 2px solid v.$error-color;
+    border-left: none;
+  }
+}
