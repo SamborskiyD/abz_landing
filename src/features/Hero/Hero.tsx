@@ -4,7 +4,7 @@ import "./Hero.scss";
 const Hero = () => {
   return (
     <section className="hero">
-      <img className="image" src="/images/hero-bg.png" alt="hero background" />
+      <img className="image" src="/images/hero-bg.webp" alt="hero background" />
       <div className="content">
         <h1 className="title">Test assignment for front-end developer</h1>
         <p className="description">
