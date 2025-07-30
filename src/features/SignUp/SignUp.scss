@@ -1,6 +1,6 @@
 @use "variables" as v;
 
-.signUp {
+.sign-up {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,14 +29,14 @@
     .position {
       margin-bottom: 47px;
 
-      .radioButtons {
+      .radio-buttons {
         margin-top: 11px;
 
         display: flex;
         flex-direction: column;
         gap: 7px;
 
-        .radioButton {
+        .radio-button {
           display: flex;
           align-items: center;
 
@@ -83,19 +83,19 @@
 }
 
 @media screen and (min-width: 768px) {
-  .signUp {
+  .sign-up {
     padding: 0px 32px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .signUp {
+  .sign-up {
     padding: 0px 60px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .signUp {
+  .sign-up {
     padding: 0px;
   }
 }

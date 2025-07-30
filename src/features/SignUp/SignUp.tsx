@@ -17,7 +17,7 @@ const SignUp = ({ reload }: { reload: () => void }) => {
   } = useSignUp({ reload });
 
   return (
-    <section id="sign-up" className="signUp">
+    <section id="sign-up" className="sign-up">
       {!isLoading && !isSubmitted && (
         <>
           <h2 className="title">Working with POST request</h2>
@@ -63,9 +63,9 @@ const SignUp = ({ reload }: { reload: () => void }) => {
 
             <div className="position">
               <label className="label">Select your position</label>
-              <div className="radioButtons">
+              <div className="radio-buttons">
                 {positions.map((position) => (
-                  <div className="radioButton" key={position.id}>
+                  <div className="radio-button" key={position.id}>
                     <input
                       className="input"
                       type="radio"
